@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/karla/v23/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaHUlKd7c.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/karla/v23/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaE0lK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Karla-b';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/karla/v23/qkBIXvYC6trAT55ZBi1ueQVIjQTDH52aHUlKd7c.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Karla-b';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/karla/v23/qkBIXvYC6trAT55ZBi1ueQVIjQTDH52aE0lK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.card {
+    margin:100px auto;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "top top" "left right";
+    font-family: 'Karla';
+    font-size: 16px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.card-section {
+    margin: 0px;
+    padding: 10px;
+}
+
+.top {
+    grid-area: top;
+}
+
+.left {
+    grid-area: left;
+    background-color:hsl(179, 62%, 43%);
+    filter: brightness(95%);
+    text-align: center;
+    
+}
+
+.right {
+    grid-area: right;
+    background-color: hsl(179, 62%, 43%);
+    text-align: left;
+}
+
+
+h1{
+    font-size: 15px;
+    color: hsl(179, 62%, 43%);
+    margin: 20px 20px 20px;
+}
+
+h2 {
+    font-size: 13px;
+    color: hsl(71, 73%, 54%);
+    margin: 20px 15px 15px;
+}
+h3 {
+    text-align: left;
+    font-size: 13px;
+    color: #FFFFFF;
+    margin: 20px 20px;
+}
+
+.uno {
+    font-size: 12px;
+    color: hsl(218, 22%, 67%);
+    margin:20px;
+}
+
+.precio {
+    color: #FFFFFF;
+    text-align: left;
+    margin: 30px 15px;
+    font-size: 10px;
+
+}
+.precio span {
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 25px;
+
+}
+button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    color: #FFFFFF;
+    width: 200px;
+    height: 40px;
+    margin: 10px 20px 20px 10px;
+    cursor: pointer;
+
+}
+
+.dos {
+   color:#FFFFFF;
+   text-align: left;
+   font-size: 13px;
+   margin: 20px ;
+}
+.tres {
+    color: #FFFFFF;
+    filter: opacity(50%);
+    text-align: left;
+    font-size: 14px;
+    margin: 10px 20px 15px 20px;
+}
+
+@media only screen and (max-width: 375px) {
+    .card {
+        font-size: 9px;
+        grid-template-columns: 1fr;
+        grid-template-areas: initial;
+        width: 95%;
+    }
+
+    button {
+        width: 80%;
+    }
+
+    .top {
+        grid-area: initial;
+    }
+
+    .left {
+        grid-area: initial;
+    }
+
+    .right {
+        grid-area: initial;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+
+
