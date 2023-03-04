@@ -36,15 +36,12 @@
 header {
     text-align: center;
     padding: 12px;
-
 }
 
 .titulo {
     color: hsl(234, 12%, 34%);
     font-family: "Poppins";
     font-weight: 100;
-
-
 }
 
 span {
@@ -57,8 +54,6 @@ h3 {
     font-family: "Poppins-a";
     padding: 20px 20px 10px;
     color: hsl(234, 12%, 34%);
-
-
 }
 
 p {
@@ -80,121 +75,88 @@ img {
     float: right;
     max-width: 20%;
     margin: 17px 17px;
-
-
 }
 
 body {
     font-size: 15px;
     font-family: "Poppins";
-
 }
 
 .container {
     display: flex;
-    flex-direction: row;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-gap: 1rem;
     justify-content: center;
+}
 
-
-
+.card-seccion {
+    height: 195px;
+    width: 295px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    border-radius: 10px;
 }
 
 .columna3 {
-    margin-top: 10%;
+    display: flex;
+    align-items: center;
 }
 
 .columna1 {
-    margin-top: 10%;
+    display: flex;
+    align-items: center;
 }
 
 
 .left {
-    height: 192px;
-    width: 292px;
-    margin: auto 20px;
-    border: none;
-    box-shadow: 2px 2px 2px 2px #ccc;
-    border-radius: 10px;
-    border-top: 5px solid hsl(180, 62%, 55%);
 
+    border-top: 5px solid hsl(180, 62%, 55%);
 }
 
 .top {
 
-    height: 192px;
-    width: 292px;
     margin-bottom: 20px;
-    border: none;
-    box-shadow: 2px 2px 2px 2px #ccc;
-    border-radius: 10px;
     border-top: 5px solid hsl(0, 78%, 62%);
-
 }
 
 .rigth {
-    height: 192px;
-    width: 292px;
-    margin: auto 20px;
-    border: none;
-    box-shadow: 2px 2px 2px 2px #ccc;
-    border-radius: 10px;
-    border-top: 5px solid hsl(212, 86%, 64%);
 
+    border-top: 5px solid hsl(212, 86%, 64%);
 }
 
 .bottom {
-    height: 192px;
-    width: 292px;
-    margin-top: 20px;
-    border: none;
-    box-shadow: 2px 2px 2px 2px #ccc;
-    border-radius: 10px;
-    border-top: 5px solid hsl(34, 97%, 64%);
 
+    border-top: 5px solid hsl(34, 97%, 64%);
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 376px) {
 
     .container {
-
-        display: flex;
         flex-direction: column;
-        justify-content: center;
         margin: auto 35px;
-
     }
 
-
     .left {
-        margin: auto;
-        margin-bottom: 20px;
-
+        margin-top: 30px;
     }
 
     .rigth {
-        margin: auto;
-        margin-bottom: 60px;
-        margin-top: auto;
-
-
+        margin-bottom: 40px;
     }
 
-    .titulo {
-        margin: auto;
-        font-size: 25px;
-        text-align: justify;
-        padding: 60px 10px 10px 15px;
-
+    h1 {
+        font-size: 24px;
+        text-align: center;
+        padding: 60px 15px 10px 15px;
     }
 
     .mensaje {
         margin: 0 auto;
-        padding: 15px 10px 10px 15px;
-        font-size: 19px;
-        width: 200px;
-        word-wrap: break-word;
-        font-size: 15px;
-        width: 100%;
+        text-align: center;
+        letter-spacing: 1.5px;
+    }
 
+    br {
+        display: none;
     }
 }
