@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tarjeta Interctiva</title>
+  </head>
+  <body>
+    <div class="izquierda">
+      <div class="tarjeta">
+        <div class="frente">
+          <img src="./images/bg-card-front.png" alt="" class="frente" />
+          <img src="./images/card-logo.svg" class="img" alt="" />
+          <p class="nombre nuevo">e.g Jane Aplassed</p>
+          <p class="num-tarjeta nuevo">0000 0000 0000 0000</p>
+          <p class="date nuevo">00/00</p>
+        </div>
+      </div>
+      <div class="tarjetare">
+        <div class="reverso">
+          <img src="./images/bg-card-back.png" alt="" class="reverso" />
+          <p class="clave nuevo">000</p>
+        </div>
+      </div>
+    </div>
+
+    <main class="formu">
+      <form
+        id="formulario"
+        class="form"
+        name="formulario"
+        action="./index.html"
+        method="post"
+      >
+        <div class="formgroup name">
+          <label for="idnombre">CARDHOLDER NAME</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="e.g.Jane Appleseed"
+          />
+          <p class="msg-error" id="nombreError"></p>
+        </div>
+
+        <div class="formgroup card">
+          <label for="idnumcard">CARD NUMBER</label>
+          <input
+            type="text"
+            id="numcard"
+            name="numtarjeta"
+            maxlength="19"
+            placeholder="e.g.1234 5678 9123 0000"
+          />
+          <p class="msg-error" id="numCardError"></p>
+        </div>
+
+        <div class="columna1">
+          <div class="formgroup fecha">
+            <label for="idfecha">EXP. DATE (MM/YY)</label>
+            <div class="juntar-fecha">
+              <div class="mes">
+                <input
+                  type="text"
+                  id="mes"
+                  name="mes"
+                  maxlength="2"
+                  placeholder="MM"
+                />
+                <p class="msg-error" id="mesError"></p>
+              </div>
+              <div class="anio">
+                <input
+                  type="text"
+                  id="anio"
+                  name="anio"
+                  maxlength="2"
+                  placeholder="YY"
+                />
+                <p class="msg-error" id="anioError"></p>
+              </div>
+            </div>
+          </div>
+          <div class="formgroup codigo">
+            <label for="idcodigoseguridad">CVC</label>
+            <input
+              type="texto"
+              id="codigoseguridad"
+              name="confirmacion"
+              maxlength="3"
+              placeholder="e.g.123"
+            />
+            <p class="msg-error" id="claveError"></p>
+          </div>
+        </div>
+        <button type="submit">Confirm</button>
+      </form>
+      <div id="mensaje">
+        <img src="./images/icon-complete.svg" alt="" class="paloma" /><br />
+        <h2>THANK YOU!</h2>
+        <br />
+        <p>We've added your card details</p>
+        <button type="submit">Continue</button>
+      </div>
+    </main>
+
+    <!--<script src="lib.js"></script>-->
+    <script src="script.js"></script>
+  </body>
+</html>

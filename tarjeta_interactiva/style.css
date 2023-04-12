@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Space';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/spacegrotesk/v15/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7aUXskPMA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    font-family: 'Space';
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+
+
+}
+
+.izquierda {
+    width: 40%;
+    height: 650px;
+    background-image: url("./images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    margin-left: 100px;
+}
+
+
+.formu {
+    width: 60%;
+    margin-right: 100px;
+    background-color: #fff;
+}
+
+.form {
+    margin: 27%;
+    margin-top: 30%;
+}
+
+.tarjeta {
+    position: absolute;
+    top: 20%;
+    left: 18%;
+}
+
+.tarjetare {
+    position: absolute;
+    top: 58%;
+    left: 25%;
+}
+
+.frente {
+    width: 350px;
+}
+
+.reverso {
+    width: 350px;
+}
+
+.formgroup {
+    width: 100%;
+    margin: 10px 5px 5px;
+}
+
+input {
+    border-radius: 5px;
+    height: 30px;
+    border-width: 1px;
+    width: 100%;
+    padding: 10px;
+}
+
+.columna1 {
+    width: 100%;
+    display: flex;
+}
+
+.fecha {
+    display: flex;
+    flex-direction: column;
+}
+
+.juntar-fecha {
+    display: flex;
+    flex-direction: row;
+}
+
+.mes {
+    width: 50%;
+    margin: 2px;
+}
+
+.anio {
+    width: 50%;
+}
+
+.codigo {
+    width: 300px;
+
+}
+
+.error {
+    border: 1px solid red;
+}
+
+input:focus {
+    border-color: blueviolet;
+    outline: 1px solid blueviolet;
+}
+
+input.error:focus {
+    border-color: red;
+    outline-color: red;
+    outline-style: solid;
+}
+
+.msg-error {
+    color: red;
+    margin: 5px;
+    font-size: 8px;
+}
+
+#mensaje {
+    font-size: 13px;
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    margin: 160px;
+    margin-top: 180px;
+    margin-left: 160px;
+    border: 5px black;
+    display: none;
+
+}
+
+button {
+    display: block;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.nuevo {
+    position: absolute;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    background-color: transparent;
+}
+
+.nombre {
+    bottom: 10%;
+    width: 150px;
+    font-size: 12px;
+}
+
+.num-tarjeta {
+    bottom: 30%;
+    font-size: 23px;
+    width: 320px;
+    letter-spacing: 1px;
+}
+
+.date {
+    bottom: 10%;
+    left: 75%;
+    width: 50px;
+    font-size: 12px;
+}
+
+.clave {
+    bottom: 42%;
+    left: 78%;
+    width: 20px;
+    font-size: 12px;
+}
+
+.img {
+    width: 60px;
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    margin: 15px;
+}
+
+.paloma {
+    margin: 20px auto;
+    width: 70px;
+}
+
+@media only screen and (max-width: 376px) {
+    body {
+        flex-direction: column;
+        width: 100%;
+        background: none;
+
+    }
+
+    .izquierda {
+        width: 100%;
+        margin: 1px;
+        height: 250px;
+    }
+
+    .tarjeta {
+        top: 130px;
+        left: 5%;
+        right: 60px;
+        z-index: 2;
+    }
+
+    .num-tarjeta {
+        font-size: 18px;
+        width: 255px;
+    }
+
+    .frente {
+        width: 100%;
+    }
+
+    .reverso {
+        width: 100%;
+    }
+
+    .tarjetare {
+        top: 40px;
+        left: 15%;
+        right: 35px;
+        z-index: 1;
+
+
+    }
+
+    .form {
+        position: absolute;
+        margin: 80px 20px 20px 20px;
+
+    }
+
+    #mensaje {
+        font-size: 15px;
+        width: 100%;
+        margin-left: 15px;
+        margin-top: 60px;
+
+    }
+
+    .formgroup {
+        width: 90%;
+    }
+
+    button {
+        width: 90%;
+    }
+
+    .formu {
+        width: 100%;
+    }
+
+
+}
