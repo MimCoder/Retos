@@ -37,6 +37,7 @@ function validateNombre() {
       styleError(nombre,error,textError);
     }
   }
+  mostrarValoresTarjeta();
   return error;
 }
 function validateCardNumber(){

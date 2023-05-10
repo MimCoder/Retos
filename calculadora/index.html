@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+       <div class="header">
+        <div class="temas">
+          <p class="cal">calc</p>
+          <p class="theme">THEME<div><small><label for="temas"> 1 2 3</label></small> 
+         <input type="range" name="temas" id="temas" min="1" max="3" value="1" step="1"></p></div>
+        </div>
+        <div class=" boton salida"><p class="pantalla"></p></div>
+        </div>
+    <main id="calculadora">
+      <div class="contenedor">
+            <button id ="tecla7"class="num" value="7">7</button>
+            <button id="tecla8" class="num"value="8">8</button>
+            <button id="tecla9" class="num"value="9">9</button>
+            <button id="EliminarUltDigito" class="boton  control texto colores"value="">DEL</button>
+            <button id="tecla4" class="num" value="4">4</button>
+            <button id="tecla5" class="num"value="5">5</button>
+            <button id="tecla6" class="num"value="6">6</button>
+            <button id="teclaMas" class="operador"value="+">+</button>
+            <button id="tecla1" class="num"value="1">1</button>
+            <button id="tecla2" class="num"value="2">2</button>
+            <button id="tecla3" class="num"value="3">3</button>
+            <button id="teclaMenos" class="operador"value="-">-</button>
+            <button id="teclaPunto" class="punto"value=".">.</button>
+            <button id="tecla0" class="num"value="0">0</button>
+            <button id="teclaEntre" class="operador"value="/">/</button>
+            <button id="teclaPor" class="operador"value="*">*</button>
+          </div>
+           <div class="reset-igual"><div class="reset"><button id="RESET" class="control texto reset colores"value="">RESET</div>
+            <div class = "content-igual"></button><button id="IGUAL" class="control texto igual"value="">=</button></div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

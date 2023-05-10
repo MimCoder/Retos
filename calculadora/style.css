@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* latin-ext */
+/* latin */
+@font-face {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/leaguespartan/v10/kJEnBuEW6A0lliaV_m88ja5Twtx8BWhtkDVmjZvMGYPZA81d.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    width: 100%;
+    font-family: 'League Spartan';
+    background-color: hsl(222, 26%, 31%);
+}
+
+#calculadora {
+    width: 35%;
+    height: 360px;
+    margin: 20px auto;
+    background-color:hsl(223, 31%, 20%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.header {
+    width: 35%;
+    margin: auto;
+}
+
+.temas {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+p {
+    width: 50%;
+    color:hsl(0, 0%, 100%);   
+}
+.cal { 
+font-size: 25px;
+}
+.theme{
+    margin: 10px;
+    font-size: 8px;
+    text-align: right;
+}
+input[type=range] {
+    width: 50px;
+    height: 15px;
+    -webkit-appearance: none;
+    background-color: hsl(223, 31%, 20%);
+    outline: none;
+    border-radius: 15px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 50px;
+    cursor: pointer;
+}
+button {
+    height: 50px;
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom: 3px solid hsl(28, 16%, 65%);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    transition: all 0.2s ease;
+}
+.salida {
+    height: 90px;
+    margin: 20px auto;
+    font-size: 60px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 36%, 15%);
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.pantalla {
+    width: 100%;
+    height: 100%;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+.reset-igual {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.control {
+    font-size: 20px;
+    background-color: hsl(225, 21%, 49%);
+    border-bottom: 3px solid hsl(224, 28%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+.reset {
+    width: 100%;
+    margin-right: 7.5px;
+}
+.content-igual {
+    width: 100%;
+}
+.igual {
+    width: 100%;
+    background-color: hsl(6, 63%, 50%);
+    border-bottom: 3px solid hsl(6, 70%, 34%);
+}
+/*TEMA 1-----------------------------------------------------------------------------------------------------------------------------------------*/
+body.tema1 .control:active {
+background-color: hsl(225, 50%, 75%);
+transform: scale(0.9);
+}
+body.tema1 button:active {
+    background-color: hsl(0, 0%, 100%);
+    transform: scale(1.5);
+}
+
+body.tema1 .igual:active, body.tema1 input[type=range]::-webkit-slider-thumb {
+    background-color: hsl(6, 65%, 60%);
+    transform: scale(0.9);
+}
+/*TEMA 2 --------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.tema2{
+background-color: hsl(0, 0%, 90%);
+}
+body.tema2 #calculadora, body.tema2 input[type=range] {
+    background-color: hsl(0, 5%, 81%);
+}
+body.tema2 .salida {
+    background-color: hsl(0, 0%, 93%);
+}
+body.tema2 .colores {
+    background-color: hsl(185, 42%, 37%);
+    border-bottom: 3px solid hsl(185, 58%, 25%);
+}
+body.tema2 .colores:hover {
+    background-color: hsl(180, 50%, 50%);
+}
+body.tema2 .igual{
+    background-color: hsl(25, 98%, 40%);
+    border-bottom: 3px solid hsl(25, 99%, 27%);
+}
+body.tema2 .igual:hover{
+    background-color: hsl(30, 100%, 50%);
+}
+body.tema2 button, body.tema2 .cal, body.tema2 .theme, body.tema2 .temas {
+ color:hsl(60, 10%, 19%)   
+}
+body.tema2 button:hover {
+    background-color: hsl(0, 0%, 100%);
+}
+body.tema2 .texto {
+color:hsl(0, 0%, 100%);
+}
+body.tema2 .salida {
+color: hsl(60, 10%, 19%)
+}
+
+/*TEMA 3-----------------------------------------------------------------------------------------------------------------------------------------------*/
+.tema3{
+background-color: hsl(268, 75%, 9%);;
+}
+body.tema3 #calculadora, body.tema3 .salida, body.tema3 input[type=range] {
+    background-color: hsl(268, 71%, 12%);
+}
+body.tema3 button{
+background-color: hsl(268, 47%, 21%);
+border-bottom: 3px solid hsl(290, 70%, 36%);
+}
+body.tema3 button:active {
+    background-color: hsl(280, 100%, 30%);
+    transform: scale(0.9);
+}
+body.tema3 .colores {
+background-color: hsl(281, 89%, 26%);
+border-bottom: 3px solid hsl(285, 91%, 52%);
+}
+body.tema3 .colores:active {
+    background-color: hsl(285, 91%, 35%);
+    transform: scale(0.9);
+}
+body.tema3 .igual, body.tema3 input[type=range]::-webkit-slider-thumb {
+    background-color:hsl(176, 100%, 44%);
+    border-bottom: 3px solid hsl(177, 92%, 70%);
+}
+body.tema3 .igual:active{
+background-color: hsl(180, 100%, 80%);
+transform: scale(0.9);
+}
+body.tema3 button,
+body.tema3 .cal,
+body.tema3 .theme,
+body.tema3 .temas
+{
+    color: hsl(52, 100%, 62%)
+}
+body.tema3 .texto {
+    color: hsl(0, 0%, 100%);
+}
+body.tema3 .igual {
+    color: hsl(198, 20%, 13%);
+}
+body.tema3 .salida {
+color: hsl(52, 100%, 62%)
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 376px) {
+
+    #calculadora {
+            width: 90%;
+    }
+        .header {
+            width: 90%;
+        }
+    button{
+    height: 50px;
+    }
+}
+
+
+.colors{
+color:hsl(222, 26%, 31%);
+color:hsl(223, 31%, 20%);
+color:hsl(224, 36%, 15%) ;
+color:hsl(225, 21%, 49%);
+color:hsl(224, 28%, 35%);
+color:hsl(6, 63%, 50%) ;
+color:hsl(6, 70%, 34%) ;
+color:hsl(30, 25%, 89%);
+color:hsl(28, 16%, 65%);
+color:hsl(28, 16%, 65%);
+color:hsl(221, 14%, 31%);
+color:hsl(0, 0%, 100%);
+color:hsl(0, 0%, 90%) ;
+color:hsl(0, 5%, 81%);
+color:hsl(0, 0%, 93%);
+color:hsl(185, 42%, 37%) ;
+color:hsl(185, 58%, 25%);
+color:hsl(25, 98%, 40%);
+color:hsl(25, 99%, 27%) ;
+color:hsl(45, 7%, 89%);
+color:hsl(35, 11%, 61%);
+color:hsl(60, 10%, 19%);
+color:hsl(0, 0%, 100%) ;
+color:hsl(268, 75%, 9%) ;
+color:hsl(268, 71%, 12%);
+color:hsl(281, 89%, 26%) ;
+color:hsl(285, 91%, 52%);
+color:hsl(176, 100%, 44%);
+color:hsl(177, 92%, 70%);
+color:hsl(268, 47%, 21%);
+color:hsl(290, 70%, 36%);
+color:hsl(52, 100%, 62%);
+color:hsl(198, 20%, 13%);
+color:hsl(0, 0%, 100%);
+}
